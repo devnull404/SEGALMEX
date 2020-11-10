@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNz9pEigwkrX-CyqF1uGLSbSI6duNN4Xk&callback=initMap&libraries=&v=weekly"
+        defer>
+    </script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SEGALMEX</title>
 </head>
+
+
 <body>
-    
+    <header>
+        <nav>
+            <div style="display: flex; align-items: flex-start; flex-wrap: wrap;">
+                <a href="#" style="height: inherit;" style="display: flex;">
+                        <img src="/img/logo.svg" alt="">
+                </a>
+                <input id="buscar" type="text" placeholder="Buscar...">
+            </div>
+
+            <a onclick="fnc1()" href="#" style="text-decoration: none; margin-left: 5px;">
+                <div style="color: black;">Ingresar</div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div id="map"></div>
+        </article>
+        <aside>
+            <h3>Objetivo: </h3>
+            <p>
+            Esta página tiene como propósito poder visualizar cada uno
+            de los puntos de acopio y registro para el programa del 
+            gobierno federal de México, denominado "Precios de Garantía" 
+            (y que puedes encontrar en el DOF en el siguiente enlace: <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5587270&fecha=24/02/2020">Precios de garantía</a>)
+            para las personas que por alguna situación no tienen acceso 
+            a esta información, y que sería de mucha ayuda encontrar el
+            centro de acopio o registro más cercano a su localidad, esto como
+            respuesta a la escaza información que existe en los medios
+            como páginas web oficiales del gobierno de México. <br>
+            <br>
+            </p>
+
+            <h3>Aviso:</h3>
+            <p>
+                Este repositorio se mantienen de manera gratuita y lo seguirá siendo
+                en la medida que la API de Google Maps lo permita, ya que no persigue ningún fin económico o 
+                político y obtiene toda la información de primera mano 
+                recolectada por personas que conocen algún centro SEGALMEX
+                para agregarlo a la lista.
+            </p>
+
+            <h3>¿Cómo colaborar?</h3>
+            <p>
+                ¡Muy fácil! ¿Conoces algún centro de acopio
+                o de recepción de documentos oficial de SEGALMEX?
+                Compártelo a alguna de mis redes de contacto que podrás encontrar
+                en el pié de esta página, sería de gran ayuda. Por otra parte, 
+                la información puede ser enviada en formato de dirección, 
+                o mejor aún, la latitud y longitud si eres un usuario más 
+                avanzado, entrando a la aplicación desde tu móbil o computadora, 
+                buscando el centro que conozcas, y enviándome las coordenadas. 
+            </p>
+            
+        </aside>
+    </main>
+
+    <footer>
+        <nav>
+            <div id="foot">
+                <a href="https://github.com/devnull404">|  Github  |</a>
+                <a href="#">|  Twitter  |</a>
+                <a href="#">|  iCloud  |</a>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="func.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--The div element for the map 
+    <div id="map"></div>
+    
+    -->
+    

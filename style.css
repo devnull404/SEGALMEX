@@ -1,0 +1,94 @@
+/* Set the size of the div element that contains the map */
+#map {
+  z-index: 0;
+    height: 400px;
+    /* The height is 400 pixels */
+    /* The width is the width of the web page */
+    border-radius: 10px;
+  }
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+header {
+  z-index: 2;
+  background-color: whitesmoke;
+  box-shadow: 1px 0px  4px 0px #888888;
+  position: sticky;
+  top: 0%;
+}
+
+/* Debugung purposes*/
+ {
+  border: 1px dotted blue;
+  margin: 5px;
+}
+
+* {
+  margin: 0;
+}
+/*-------------------*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+a > img {
+  max-width: 300px;
+  min-width: 90px;
+  object-fit: cover;
+}
+input {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px dotted gray;
+  background-color: whitesmoke;
+  transition: all 0.4s ease-in-out;
+}
+input:focus {
+  background-color: white;
+  width: 250px;
+}
+
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+article {
+  width: 500px;
+  min-width: 350px;
+  margin-bottom: 10px;
+}
+aside {
+  min-width: 360px;
+  max-width: 400px;
+}
+
+footer {
+  background-color: whitesmoke;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

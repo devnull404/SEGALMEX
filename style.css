@@ -21,7 +21,7 @@ header {
 /* Debugung purposes*/
  {
   border: 1px dotted blue;
-  margin: 5px;
+  margin: 10px;
 }
 
 * {
@@ -64,7 +64,7 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
-  align-items: flex-start;
+  align-items: center;
 }
 h3 {
   margin-top: 20px;
@@ -73,6 +73,7 @@ h3 {
 article {
   border-radius: 10px;
   width: 500px;
+  margin-top: 10px;
   min-width: 350px;
   margin-bottom: 10px;
   box-shadow: 1px 2px  4px 2px #888888;
@@ -96,4 +97,25 @@ footer {
 a {
   text-decoration: none;
   color: black;
+}
+
+section.container-collage {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#img-barner {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  border: 1px dotted gray;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+article > div {
+  padding: 10px;
 }
